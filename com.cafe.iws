@@ -4,10 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="be99eb86-29ee-4447-bdd6-1b3785887a1c" name="Changes" comment="Complete backend signup restapi">
+    <list default="true" id="be99eb86-29ee-4447-bdd6-1b3785887a1c" name="Changes" comment="All product API completed.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cafe/dao/BillDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cafe/model/Bill.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cafe/rest/BillRest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cafe/restImpl/BillRestImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cafe/service/BillService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cafe/serviceImpl/BillServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/com.cafe.iml" beforeDir="false" afterPath="$PROJECT_DIR$/com.cafe.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/com.cafe.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/com.cafe.ipr" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/com.cafe.iws" beforeDir="false" afterPath="$PROJECT_DIR$/com.cafe.iws" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cafe/constents/CafeConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cafe/constents/CafeConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cafe/model/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cafe/model/Category.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cafe/rest/CategoryRest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cafe/rest/CategoryRest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cafe/rest/UserRest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cafe/rest/UserRest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cafe/utils/CafeUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cafe/utils/CafeUtils.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -186,18 +197,35 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Sprint_01" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="UPDATE_TYPE" value="REBASE" />
   </component>
-  <component name="GitHubPullRequestSearchHistory">{ &quot;lastFilter&quot;: { &quot;state&quot;: &quot;OPEN&quot;, &quot;assignee&quot;: &quot;Edirimanna&quot; } }</component>
-  <component name="GithubPullRequestsUISettings">{ &quot;selectedUrlAndAccountId&quot;: { &quot;url&quot;: &quot;https://github.com/Edirimanna/restrurent_management_system.git&quot;, &quot;accountId&quot;: &quot;5982f5dd-a2ff-4586-891b-c43d0789b480&quot; } }</component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;history&quot;: [
+    {
+      &quot;assignee&quot;: &quot;Edirimanna&quot;
+    }
+  ],
+  &quot;lastFilter&quot;: {
+    &quot;assignee&quot;: &quot;Edirimanna&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Edirimanna/restrurent_management_system.git&quot;,
+    &quot;accountId&quot;: &quot;5982f5dd-a2ff-4586-891b-c43d0789b480&quot;
+  }
+}</component>
   <component name="HierarchyBrowserManager">
     <option name="SHOW_PACKAGES" value="false" />
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="SORT_ALPHABETICALLY" value="false" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/6.1.13/spring-web-6.1.13.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class" root0="SKIP_INSPECTION" />
   </component>
   <component name="InspectionManager">
     <option name="AUTOSCROLL_TO_SOURCE" value="false" />
@@ -213,6 +241,9 @@
     <option name="ADD_LABEL_ON_DEBUGGING" value="true" />
     <option name="ADD_LABEL_ON_UNIT_TEST_PASSED" value="true" />
     <option name="ADD_LABEL_ON_UNIT_TEST_FAILED" value="true" />
+  </component>
+  <component name="MavenRunner">
+    <option name="skipTests" value="true" />
   </component>
   <component name="PerforceConfiguration">
     <option name="PORT" value="magic:1666" />
@@ -258,14 +289,18 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.CafeManagemenetSystemApplication.executor": "Run",
-    "Application.CafeManagementSystemApplication.executor": "Run",
+    "Application.CafeManagementSystemApplication.executor": "Debug",
+    "Maven.com.cafe [clean,install].executor": "Run",
     "Maven.com.cafe [clean].executor": "Run",
+    "Maven.com.cafe [deploy].executor": "Run",
     "Maven.com.cafe [idea:idea].executor": "Run",
     "Maven.com.cafe [install].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "Sprint__02",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "Sprint__03",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/My Work/Projects/restrurent_management_system"
+    "last_opened_file_path": "C:/My Work/Projects/restrurent_management_system",
+    "settings.editor.selected.configurable": "editor.preferences.fonts.default"
   }
 }]]></component>
   <component name="RunAnythingCache">
@@ -397,7 +432,56 @@
       <option name="presentableId" value="LOCAL−00003" />
       <updated>1728023413994</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL−00004" summary="Add JWT authenticate code">
+      <option name="closed" value="true" />
+      <created>1728152321356</created>
+      <option name="number" value="LOCAL−00004" />
+      <option name="presentableId" value="LOCAL−00004" />
+      <updated>1728152321356</updated>
+    </task>
+    <task id="LOCAL−00005" summary="Add jwt login in to the application">
+      <option name="closed" value="true" />
+      <created>1728237371542</created>
+      <option name="number" value="LOCAL−00005" />
+      <option name="presentableId" value="LOCAL−00005" />
+      <updated>1728237371542</updated>
+    </task>
+    <task id="LOCAL−00006" summary="config changes">
+      <option name="closed" value="true" />
+      <created>1728237472599</created>
+      <option name="number" value="LOCAL−00006" />
+      <option name="presentableId" value="LOCAL−00006" />
+      <updated>1728237472599</updated>
+    </task>
+    <task id="LOCAL−00007" summary="Start to implement category part">
+      <option name="closed" value="true" />
+      <created>1728499005365</created>
+      <option name="number" value="LOCAL−00007" />
+      <option name="presentableId" value="LOCAL−00007" />
+      <updated>1728499005365</updated>
+    </task>
+    <task id="LOCAL−00008" summary="Complete creating All category Api">
+      <option name="closed" value="true" />
+      <created>1728538410300</created>
+      <option name="number" value="LOCAL−00008" />
+      <option name="presentableId" value="LOCAL−00008" />
+      <updated>1728538410300</updated>
+    </task>
+    <task id="LOCAL−00009" summary="Complete creating All product Api">
+      <option name="closed" value="true" />
+      <created>1728558562656</created>
+      <option name="number" value="LOCAL−00009" />
+      <option name="presentableId" value="LOCAL−00009" />
+      <updated>1728558562656</updated>
+    </task>
+    <task id="LOCAL−00010" summary="All product API completed.">
+      <option name="closed" value="true" />
+      <created>1728566061624</created>
+      <option name="number" value="LOCAL−00010" />
+      <option name="presentableId" value="LOCAL−00010" />
+      <updated>1728566061624</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -470,7 +554,15 @@
     <MESSAGE value="Add the log line for the testing" />
     <MESSAGE value="Add the basic class and create a database structure" />
     <MESSAGE value="Complete backend signup restapi" />
-    <option name="LAST_COMMIT_MESSAGE" value="Complete backend signup restapi" />
+    <MESSAGE value="Add JWT authenticate code" />
+    <MESSAGE value="Add jwt login in to the application" />
+    <MESSAGE value="config changes" />
+    <MESSAGE value="fixed email issue" />
+    <MESSAGE value="Start to implement category part" />
+    <MESSAGE value="Complete creating All category Api" />
+    <MESSAGE value="Complete creating All product Api" />
+    <MESSAGE value="All product API completed." />
+    <option name="LAST_COMMIT_MESSAGE" value="All product API completed." />
   </component>
   <component name="VssConfiguration">
     <CheckoutOptions>
@@ -527,26 +619,90 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/cafe/restImpl/UserRestImpl.java</url>
-          <line>23</line>
-          <option name="timeStamp" value="1" />
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/cafe/serviceImpl/UserServiceImpl.java</url>
+          <line>49</line>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/cafe/serviceImpl/UserServiceImpl.java</url>
-          <line>25</line>
-          <option name="timeStamp" value="2" />
+          <line>199</line>
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/com/cafe/rest/UserRest.java</url>
-          <line>13</line>
-          <properties class="com.cafe.rest.UserRest" method="signUp">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="3" />
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/cafe/restImpl/UserRestImpl.java</url>
+          <line>49</line>
+          <option name="timeStamp" value="12" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/cafe/restImpl/UserRestImpl.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/cafe/JWT/JWTUtil.java</url>
+          <line>54</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/cafe/restImpl/UserRestImpl.java</url>
+          <line>95</line>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/cafe/serviceImpl/UserServiceImpl.java</url>
+          <line>213</line>
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/cafe/serviceImpl/ProductServiceImpl.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/cafe/serviceImpl/ProductServiceImpl.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/cafe/serviceImpl/ProductServiceImpl.java</url>
+          <line>92</line>
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/cafe/serviceImpl/ProductServiceImpl.java</url>
+          <line>91</line>
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/cafe/serviceImpl/ProductServiceImpl.java</url>
+          <line>117</line>
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/cafe/restImpl/BillRestImpl.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/cafe/serviceImpl/BillServiceImpl.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+        <breakpoint type="java-exception">
+          <properties class="java.lang.IllegalStateException" package="java.lang" />
+          <option name="timeStamp" value="5" />
+        </breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="auth" language="JAVA" />
+        <watch expression="signWith(SignatureAlgorithm.HS256, secret)" language="JAVA" />
+        <watch expression="userDao.findByEmailId(requestMap.get(&quot;id&quot;)" language="JAVA" />
+        <watch expression="requestMap.get(&quot;id&quot;)" language="JAVA" />
+        <watch expression="table.addCell(String.valueOf(data.get(&quot;price&quot;)));" language="JAVA" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>
